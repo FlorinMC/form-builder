@@ -1,0 +1,9 @@
+.hide-progress-bar {
+  display: none;
+}
+
+.progress-bar {
+  position: absolute;
+  z-index: 99999;
+  top:0;
+}

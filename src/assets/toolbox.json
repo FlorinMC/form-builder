@@ -1,0 +1,121 @@
+{
+    "id": "1",
+    "toolboxItems": [{
+        "id": "1",
+        "displayName": "CheckBox",
+        "designerProperties": [{
+            "displayInfo": "Name",
+            "value": "",
+            "propertyHtmlTag": "textarea",
+            "propertyHtmlTagType": "",
+            "htmlAttributes": [{
+                "propertyName": "rows",
+                "propertyValue": "2"
+            }, {
+                "propertyName": "maxlength",
+                "propertyValue": "150"
+            }]
+        }],
+        "type": 3,
+        "renderAsHtmlTag": "input",
+        "renderedHtmlTagType": "checkbox"
+    }, {
+        "id": "2",
+        "displayName": "Picture",
+        "designerProperties": [{
+            "displayInfo": "Name",
+            "value": "",
+            "propertyHtmlTag": "textarea",
+            "propertyHtmlTagType": "",
+            "htmlAttributes": [{
+                "propertyName": "rows",
+                "propertyValue": "2"
+            }, {
+                "propertyName": "maxlength",
+                "propertyValue": "1000"
+            }]
+        }, {
+            "displayInfo": "Description",
+            "value": "",
+            "propertyHtmlTag": "textarea",
+            "propertyHtmlTagType": "",
+            "htmlAttributes": [{
+                "propertyName": "rows",
+                "propertyValue": "5"
+            }, {
+                "propertyName": "maxlength",
+                "propertyValue": "1000"
+            }]
+        }, {
+            "displayInfo": "Image url",
+            "value": "",
+            "propertyHtmlTag": "input",
+            "propertyHtmlTagType": "file",
+            "htmlAttributes": [{
+                "propertyName": "accept",
+                "propertyValue": "image/*"
+            }]
+        }],
+        "type": 1,
+        "renderAsHtmlTag": "img",
+        "renderedHtmlTagType": ""
+    }, {
+        "id": "3",
+        "displayName": "Text",
+        "designerProperties": [{
+            "displayInfo": "Name",
+            "value": "",
+            "propertyHtmlTag": "textarea",
+            "propertyHtmlTagType": "",
+            "htmlAttributes": [{
+                "propertyName": "rows",
+                "propertyValue": "2"
+            }, {
+                "propertyName": "maxlength",
+                "propertyValue": "100"
+            }]
+        }, {
+            "displayInfo": "Content",
+            "value": "",
+            "propertyHtmlTag": "textarea",
+            "propertyHtmlTagType": "",
+            "htmlAttributes": [{
+                "propertyName": "rows",
+                "propertyValue": "5"
+            }, {
+                "propertyName": "maxlength",
+                "propertyValue": "1000"
+            }]
+        }],
+        "type": 2,
+        "renderAsHtmlTag": "p",
+        "renderedHtmlTagType": ""
+    }],
+    "task": {
+        "level": 0,
+        "name": "",
+        "description": "",
+        "duration": "3m",
+        "taskBlocks": [],
+        "descriptionFiles": [],
+        "tools": [{
+            "quantity": 1,
+            "toolId": "59672691473ffb0001ac4f6a",
+            "id": null
+        }, {
+            "quantity": 1,
+            "toolId": "59672691473ffb0001ac4f6b",
+            "id": null
+        }],
+        "spareParts": [{
+            "quantity": 1,
+            "sparePartId": "59672691473ffb0001ac4f6c",
+            "id": null
+        }, {
+            "quantity": 2,
+            "sparePartId": "52423432423491473ffb0001ac4f6c",
+            "id": null
+        }],
+        "id": null
+    }
+}

@@ -1,0 +1,28 @@
+<div class="MainContainer" fxLayout="row" fxLayout.xs="column" fxLayoutAlign="center stretch">
+    <div fxFlex="98%">
+        <div fxLayout="row" fxLayoutGap="40px" fxFlexFill>
+            <div fxFlex="20%">
+                <app-toolbox-panel></app-toolbox-panel>
+            </div>
+            <div fxFlex="60%">
+                <div fxLayout="column">
+                    <app-workplan-container></app-workplan-container>
+                    <div class="MainContainer-Dropzone-Wrapper" dnd-droppable (onDropSuccess)="onDropSuccess($event)" [dropZones]="['workplanDropZone']">
+                        <md-card class="MainContainer-Dropzone" fxFlexFill>Drop items from toolbox here</md-card>
+                    </div>
+                    <div dnd-sortable-container [dropZones]="['toolbox']" [sortableData]="droppedTaskBoxes">
+                        <app-task-container *ngIf="isNewWorkplanTemplate"></app-task-container>
+                        <ng-template #dynamicTaskbarComponent></ng-template>
+                    </div>
+                </div>
+            </div>
+            <div fxFlex="20%" fxLayout="column">
+                <app-properties-panel>
+                    <content>
+                        <ng-template #dynamicPropertiesComponent></ng-template>
+                    </content>
+                </app-properties-panel>
+            </div>
+        </div>
+    </div>
+</div>

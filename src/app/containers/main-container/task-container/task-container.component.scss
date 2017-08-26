@@ -1,0 +1,51 @@
+        @import '~styles/styles';
+        .TaskContainer {
+            outline: 0;
+            &-Dropzone {
+                &.mat-card {
+                    border: 2px dashed #c7c5c7;
+                    color: #c7c5c7;
+                    font-size: 20px;
+                    font-weight: bold;
+                    border-radius: 5px;
+                    box-shadow: none;
+                    background: none;
+                    margin: 20px 0;
+                }
+                &-Wrapper {
+                    padding: 20px 0;
+                }
+            }
+            &-md-card-selected {
+                & {
+                    position: relative;
+                    &:before {
+                        content: "";
+                        width: 5px;
+                        position: absolute;
+                        bottom: 0;
+                        top: 0;
+                        left: 0;
+                        background: $beeware-green;
+                        z-index: 1;
+                    }
+                }
+            }
+            &-Box {
+                width: 100%;
+                min-height: 20px;
+                margin: 5px 0;
+                border: 1px solid #000;
+                cursor: move !important;
+                background-color: #fff;
+            }
+            &-ContentBox {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+            &-File {
+                font-size: 13px;
+                color: $beeware-grey;
+                padding: 10px 0;
+            }
+        }

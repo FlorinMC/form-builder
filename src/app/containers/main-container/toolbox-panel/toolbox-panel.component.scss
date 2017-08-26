@@ -1,0 +1,38 @@
+.MainContainer {
+    .boxes {
+        outline: 1px solid red;
+        width: 100%;
+        padding: 10px;
+        background: #999;
+    }
+    .dropped {
+        padding: 10px;
+        border: 1px solid blue;
+    }
+    .dropzone {
+        background: red;
+        min-height: 20px;
+        min-width: 20px;
+        padding: 20px;
+    }
+    .sortable {
+        margin: 20px;
+        background: yellow;
+        min-height: 20px;
+        min-width: 20px;
+    }
+    &-Title {
+        font-size: 14px;
+        color: rgba(0, 0, 0, 0.87);
+    }
+    &-WidgetBox {
+        border: 1px solid black;
+        cursor: move !important;
+        margin: 5px 0;
+        color: #000;
+        background: #fff;
+        &-Taskbox {
+            margin-bottom: 20px;
+        }
+    }
+}

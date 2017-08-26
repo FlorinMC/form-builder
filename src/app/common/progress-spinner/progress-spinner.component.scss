@@ -1,0 +1,20 @@
+@import '~styles/styles';
+
+.spinner-overlay {
+  position: absolute;
+  // top: 0;
+  left: 0;
+  width: 100%;
+  height: calc(100% - #{$toolbar-height});
+  z-index: 10;
+  background-color: rgba(0,0,0,0.5);
+  overflow-x: hidden;
+  overflow-y: hidden;
+  /*dim the background*/
+
+  .spinner {
+    margin: 0 auto;
+    height: 100%;
+  }
+
+}

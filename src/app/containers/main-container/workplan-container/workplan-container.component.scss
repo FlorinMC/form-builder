@@ -1,0 +1,18 @@
+@import '~styles/styles';
+:host {
+    cursor: pointer;
+}
+
+md-card {
+    &.md-card-selected {
+        &:before {
+            content: "";
+            width: 5px;
+            position: absolute;
+            bottom: 0;
+            top: 0;
+            left: 0;
+            background: $beeware-green;
+        }
+    }
+}

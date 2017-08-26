@@ -1,0 +1,13 @@
+@mixin input-error-message {
+    color: $input-error-message-color;
+    font-size: 12px;
+    line-height: 14px;
+}
+
+@mixin position($position, $top: null, $right: null, $bottom: null, $left: null) {
+    position: $position;
+    top: $top;
+    right: $right;
+    bottom: $bottom;
+    left: $left;
+}

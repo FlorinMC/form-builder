@@ -1,0 +1,23 @@
+@import '~styles/styles';
+.Task-Container {
+    &-Box {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    &-File {
+        font-size: 13px;
+        color: $beeware-grey;
+        padding: 10px 0;
+    }
+    &-Icon {
+        text-align: right;
+        color: $beeware-grey;
+    }
+    &-Add {
+        color: #0280ff;
+        cursor: pointer;
+        font-size: 12px;
+        padding: 10px 0;
+        display: block;
+    }
+}

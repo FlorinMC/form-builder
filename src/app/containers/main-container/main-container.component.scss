@@ -1,0 +1,18 @@
+@import '~styles/styles';
+.MainContainer {
+    &-Dropzone {
+        &.mat-card {
+            border: 2px dashed #c7c5c7;
+            color: #c7c5c7;
+            font-size: 20px;
+            font-weight: bold;
+            border-radius: 5px;
+            box-shadow: none;
+            background: none;
+            margin: 20px 0;
+        }
+        &-Wrapper {
+            padding: 20px 0;
+        }
+    }
+}

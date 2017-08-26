@@ -1,0 +1,19 @@
+<div class="MainContainer">
+    <div class="MainContainer MainContainer-Title">Toolbox</div>
+
+    <div *ngIf="widgets" class="MainContainer MainContainer-WidgetBox MainContainer-WidgetBox-Taskbox" dnd-draggable [dragEnabled]="true" [dragData]="taskBoxWidget?.title" (onDragSuccess)="null" [dropZones]="['workplanDropZone']">
+        <md-list>
+            <md-list-item>
+                <md-icon md-list-icon>{{taskBoxWidget?.icon}}</md-icon>
+                <h4 md-line>{{taskBoxWidget?.title}}</h4>
+            </md-list-item>
+        </md-list>
+    </div>
+
+    <md-list>
+        <md-list-item class="MainContainer MainContainer-WidgetBox" dnd-draggable [dragEnabled]="true" [dragData]="widget?.title" [dropZones]="['taskbarDropZone']" *ngFor="let widget of widgets">
+            <md-icon md-list-icon>{{widget?.icon}}</md-icon>
+            <h4 md-line>{{widget?.title}}</h4>
+        </md-list-item>
+    </md-list>
+</div>

@@ -1,0 +1,128 @@
+        @import '~styles/styles';
+        .last {
+            // show border bottom on last element only
+            .border {
+                border-bottom: 1px solid #000000;
+            }
+        }
+        
+        md-list-item {
+            &.expanded {
+                margin-left: -20px;
+                margin-right: -20px;
+            }
+            &.border {
+                border: 1px solid #000000;
+                border-bottom-width: 0;
+                &>.mat-list-item-content {
+                    min-height: 48px;
+                    height: inherit !important;
+                }
+                &.expanded {
+                    border: none;
+                    outline: 1px solid #000;
+                    &>.mat-list-item-content {
+                        md-list-item {
+                            margin: 0 -16px;
+                        }
+                    }
+                }
+            }
+        }
+        
+        .Workplan {
+            cursor: pointer;
+            &-MainRow {
+                background-color: #ffffff;
+                &:before {
+                    content: '';
+                    position: absolute;
+                    left: 0;
+                    right: 0;
+                    background-color: #ffffff;
+                    top: 0;
+                    bottom: 0;
+                    z-index: -1;
+                }
+                &-Expanded {
+                    background-color: $beeware-f7-grey;
+                    padding: 16px 0;
+                    position: relative;
+                    &:before {
+                        left: -16px;
+                        right: -16px;
+                        background-color: $beeware-f7-grey;
+                    }
+                }
+            }
+            &-Name,
+            &-Time {
+                color: rgba(0, 0, 0, 0.87);
+                font-size: 14px;
+            }
+            &-Icon {
+                color: rgba(0, 0, 0, 0.54);
+            }
+            &-Button {
+                button {
+                    margin-right: -16px;
+                    color: #8abd24;
+                    font-size: 12px;
+                    text-transform: uppercase;
+                }
+            }
+            &-Description {
+                background-color: #ffffff;
+                padding: 10px 0;
+                &:before {
+                    content: '';
+                    position: absolute;
+                    left: 0;
+                    right: 0;
+                    background-color: #ffffff;
+                    top: 0;
+                    bottom: 0;
+                    z-index: -2;
+                }
+                &-Title {
+                    color: rgba(0, 0, 0, 0.54);
+                    font-size: 14px;
+                    font-weight: 500;
+                    padding: 5px 0;
+                }
+                &-Tasks {
+                    &-Title {
+                        color: rgba(0, 0, 0, 0.87);
+                        font-size: 14px;
+                        padding: 25px 0 15px;
+                        font-weight: bold;
+                    }
+                    &-List {
+                        &-Title,
+                        &-Subtitle {
+                            padding: 0 0 5px;
+                        }
+                        &-Title {
+                            color: rgba(0, 0, 0, 0.67);
+                            font-size: 14px;
+                            font-weight: 500;
+                        }
+                        &-Subtitle {
+                            color: rgba(0, 0, 0, 0.54);
+                            font-size: 12px;
+                            font-weight: 400;
+                        }
+                        &-Content {
+                            color: rgba(0, 0, 0, 0.54);
+                            font-size: 14px;
+                            font-weight: 500;
+                            padding: 5px 0;
+                        }
+                    }
+                }
+            }
+        }
+        
+        .align-right {
+            text-align: right;
+        }

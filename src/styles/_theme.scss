@@ -1,0 +1,9 @@
+@import '../../node_modules/@angular/material/theming';
+@include mat-core();
+$mat-beeware: ( 50: #f1f7e5, 100: #dcebbd, 200: #c5de92, 300: #add166, 400: #9cc745, 500: #8abd24, 600: #82b720, 700: #77ae1b, 800: #6da616, 900: #5a980d, A100: #e4ffc8, A200: #cbff95, A400: #b2ff62, A700: #a6ff48, contrast: ( 50: $black-87-opacity, 100: $black-87-opacity, 200: $black-87-opacity, 300: $black-87-opacity, 400: $black-87-opacity, 500: white, 600: white, 700: white, 800: white, 900: white, A100: $black-87-opacity, A200: $black-87-opacity, A400: $black-87-opacity, A700: $black-87-opacity, ));
+$mat-red: ( 50: #ffebee, 100: #ffcdd2, 200: #ef9a9a, 300: #e57373, 400: #ef5350, 500: #CB3A27, 600: #e53935, 700: #d32f2f, 800: #c62828, 900: #b71c1c, A100: #ff8a80, A200: #ff5252, A400: #ff1744, A700: #d50000, contrast: ( 50: $black-87-opacity, 100: $black-87-opacity, 200: $black-87-opacity, 300: $black-87-opacity, 400: $black-87-opacity, 500: white, 600: white, 700: white, 800: $white-87-opacity, 900: $white-87-opacity, A100: $black-87-opacity, A200: white, A400: white, A700: white, ));
+$primary: mat-palette($mat-beeware);
+$accent: mat-palette($mat-beeware, A200, A100, A400);
+$warn: mat-palette($mat-red);
+$theme: mat-light-theme($primary, $accent);
+@include angular-material-theme($theme);

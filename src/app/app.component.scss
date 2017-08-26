@@ -1,0 +1,12 @@
+@import '~styles/styles';
+.App {
+    &,
+    &-Sidenav {
+        height: 100%;
+    }
+    &-Container {
+        height: calc(100% - #{$footer-height} - #{$toolbar-height});
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+}

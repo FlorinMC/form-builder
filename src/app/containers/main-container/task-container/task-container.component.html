@@ -1,0 +1,73 @@
+<div tabindex="0" class="TaskContainer" [class.TaskContainer-md-card-selected]="isMdCardSelected" dnd-droppable (onDropSuccess)="onDropSuccess($event)" [dropZones]="['taskbarDropZone']">
+    <md-card>
+        <md-card-content>
+            <div *ngIf="currentTask">
+                <section>
+                    <p>{{currentTask?.name}}</p>
+                    <p>{{currentTask?.description}}</p>
+                </section>
+
+                <section>
+                    <div class="flex-container">
+                        <div class="flex-item" fxFlex="100%">
+
+                            <table class="TaskContainer TaskContainer-ContentBox">
+                                <tr>
+                                    <th>Instruction files</th>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="TaskContainer TaskContainer-File">User manual.pdf</div>
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <table class="TaskContainer TaskContainer-ContentBox">
+                                <tr>
+                                    <th>Tools</th>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="TaskContainer TaskContainer-File">(no items)</div>
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <table class="TaskContainer TaskContainer-ContentBox">
+                                <tr>
+                                    <th>Spare parts</th>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="TaskContainer TaskContainer-File">(no items)</div>
+                                    </td>
+                                </tr>
+                            </table>
+
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+
+            <div *ngIf="taskDroppedHtmlBoxes && taskDroppedHtmlBoxes.length" class="TaskContainer">
+                <div dnd-sortable-container [draggable]="true" [sortableData]="taskDroppedHtmlBoxes">
+                    <div *ngFor="let item of taskDroppedHtmlBoxes; let i = index" id="taskDroppedHtmlBox-{{i}}" class="TaskContainer-Box" dnd-sortable [sortableIndex]="i" [dragData]="item"  (click)="insertCurrentToolBoxItem(item, $event)">
+                        <md-list>
+                            <md-list-item>
+                                <md-icon md-list-icon>{{item?.icon}}</md-icon>
+                                <h4 md-line>{{item?.title}}</h4>
+                                <md-icon>drag_handle</md-icon>
+                            </md-list-item>
+                        </md-list>
+                    </div>
+                </div>
+            </div>
+            <div *ngIf="!isAllTaskDropzone">
+                <div class="TaskContainer-Dropzone-Wrapper" dnd-droppable (onDropSuccess)="onDropSuccess($event)" [dropZones]="['taskbarDropZone']">
+                    <md-card class="TaskContainer-Dropzone" fxFlexFill>Drop items from toolbox here</md-card>
+                </div>
+            </div>
+        </md-card-content>
+    </md-card>
+</div>

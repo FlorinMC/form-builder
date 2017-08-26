@@ -1,0 +1,250 @@
+[{
+        "id": "Workplan - 1",
+        "name": "Test WP 1",
+        "description": "Test WP Description for WP1",
+        "updatedOn": "2017-08-11T14:26:56.033Z",
+        "createdOn": "2017-08-11T14:26:56.033Z",
+        "userId": 1,
+        "taskItems": [{
+                "level": 1,
+                "name": "First task name",
+                "description": "This is the first task",
+                "duration": 90,
+                "taskBlocks": [{
+                        "id": "taskblock - 011",
+                        "displayName": "Picture display name",
+                        "designerProperties": [{
+                            "displayInfo": "Name",
+                            "value": "",
+                            "propertyHtmlTag": "textarea",
+                            "propertyHtmlTagType": "",
+                            "htmlAttributes": [{
+                                "propertyName": "placeholder",
+                                "propertyValue": "Here should be a value"
+                            }]
+                        }],
+                        "type": 1,
+                        "renderAsHtmlTag": "input",
+                        "renderedHtmlTagType": "file"
+                    },
+                    {
+                        "id": "taskblock - 12",
+                        "displayName": "Text display name",
+                        "designerProperties": [{
+                                "id": "designerProperty - 012A",
+                                "displayInfo": "Name",
+                                "value": "1 This value is already existing for this text box 1",
+                                "propertyHtmlTag": "textarea",
+                                "propertyHtmlTagType": "",
+                                "htmlAttributes": [{
+                                    "propertyName": "placeholder",
+                                    "propertyValue": "Here should be a value for name"
+                                }]
+                            },
+                            {
+                                "id": "designerProperty - 012B",
+                                "displayInfo": "Description",
+                                "value": "",
+                                "propertyHtmlTag": "textarea",
+                                "propertyHtmlTagType": "",
+                                "htmlAttributes": [{
+                                    "propertyName": "placeholder",
+                                    "propertyValue": "Here should be a value for description"
+                                }]
+                            }
+                        ],
+                        "type": 2,
+                        "renderAsHtmlTag": "p",
+                        "renderedHtmlTagType": ""
+                    }
+                ],
+                "descriptionFiles": [],
+                "tools": [],
+                "spareParts": [],
+                "id": "taskitem - 11"
+            },
+            {
+                "level": 2,
+                "name": "Second task name",
+                "description": "This is the second task",
+                "duration": 45,
+                "taskBlocks": [{
+                        "id": "taskblock - 11",
+                        "displayName": "Checkbox display name",
+                        "designerProperties": [{
+                                "id": "taskblock - 013",
+                                "displayInfo": "Name",
+                                "value": "",
+                                "propertyHtmlTag": "textarea",
+                                "propertyHtmlTagType": "",
+                                "htmlAttributes": [{
+                                    "propertyName": "placeholder",
+                                    "propertyValue": "Here should be a value"
+                                }]
+                            },
+                            {
+                                "id": "taskblock - 014",
+                                "displayInfo": "Name",
+                                "value": "",
+                                "propertyHtmlTag": "textarea",
+                                "propertyHtmlTagType": "",
+                                "htmlAttributes": [{
+                                    "propertyName": "placeholder",
+                                    "propertyValue": "Here should be a value"
+                                }]
+                            },
+                            {
+                                "id": "taskblock - 017",
+                                "displayInfo": "Name",
+                                "value": "",
+                                "propertyHtmlTag": "textarea",
+                                "propertyHtmlTagType": "",
+                                "htmlAttributes": [{
+                                    "propertyName": "placeholder",
+                                    "propertyValue": "Here should be a value"
+                                }]
+                            }
+                        ],
+                        "type": 3,
+                        "renderAsHtmlTag": "input",
+                        "renderedHtmlTagType": "checkbox"
+                    },
+                    {
+                        "id": "taskblock - 122",
+                        "displayName": "Text display name",
+                        "designerProperties": [{
+                                "id": "taskblock - 081",
+                                "displayInfo": "Name",
+                                "value": "2 This value is already existing for this text box 2",
+                                "propertyHtmlTag": "textarea",
+                                "propertyHtmlTagType": "",
+                                "htmlAttributes": [{
+                                    "propertyName": "placeholder",
+                                    "propertyValue": "Here should be a value for name"
+                                }]
+                            },
+                            {
+                                "id": "taskblock - 0191",
+                                "displayInfo": "Description",
+                                "value": "",
+                                "propertyHtmlTag": "textarea",
+                                "propertyHtmlTagType": "",
+                                "htmlAttributes": [{
+                                    "propertyName": "placeholder",
+                                    "propertyValue": "Here should be a value for description"
+                                }]
+                            }
+                        ],
+                        "type": 2,
+                        "renderAsHtmlTag": "p",
+                        "renderedHtmlTagType": ""
+                    }
+                ],
+                "descriptionFiles": [],
+                "tools": [],
+                "spareParts": [],
+                "id": "12"
+            }
+        ]
+    }
+
+    ,
+    {
+        "id": "Workplan - 2",
+        "name": "Test WP 2",
+        "description": "Test WP Description for WP12",
+        "updatedOn": "2017-02-11T14:22:56.033Z",
+        "createdOn": "2017-02-11T14:22:56.033Z",
+        "userId": 2,
+        "taskItems": [{
+                "level": 1,
+                "name": "First task name 2",
+                "description": "This is the first task 2",
+                "duration": 90,
+                "taskBlocks": [],
+                "descriptionFiles": [],
+                "tools": [],
+                "spareParts": [],
+                "id": "taskitem - 21"
+            },
+            {
+                "level": 2,
+                "name": "Second task name 2",
+                "description": "This is the second task 2",
+                "duration": 45,
+                "taskBlocks": [{
+                        "id": "taskblock - 21",
+                        "displayName": "Checkbox display name 2",
+                        "designerProperties": [{
+                                "displayInfo": "Name",
+                                "value": "",
+                                "propertyHtmlTag": "textarea",
+                                "propertyHtmlTagType": "",
+                                "htmlAttributes": [{
+                                    "propertyName": "placeholder",
+                                    "propertyValue": "Here should be a value 2"
+                                }]
+                            },
+                            {
+                                "displayInfo": "Name 2",
+                                "value": "",
+                                "propertyHtmlTag": "textarea",
+                                "propertyHtmlTagType": "",
+                                "htmlAttributes": [{
+                                    "propertyName": "placeholder",
+                                    "propertyValue": "Here should be a value"
+                                }]
+                            },
+                            {
+                                "displayInfo": "Name",
+                                "value": "",
+                                "propertyHtmlTag": "textarea",
+                                "propertyHtmlTagType": "",
+                                "htmlAttributes": [{
+                                    "propertyName": "placeholder",
+                                    "propertyValue": "Here should be a value"
+                                }]
+                            }
+                        ],
+                        "type": 3,
+                        "renderAsHtmlTag": "input",
+                        "renderedHtmlTagType": "checkbox"
+                    },
+                    {
+                        "id": "taskblock - 22",
+                        "displayName": "Text display name",
+                        "designerProperties": [{
+                                "displayInfo": "Name",
+                                "value": "",
+                                "propertyHtmlTag": "textarea",
+                                "propertyHtmlTagType": "",
+                                "htmlAttributes": [{
+                                    "propertyName": "placeholder",
+                                    "propertyValue": "Here should be a value for name"
+                                }]
+                            },
+                            {
+                                "displayInfo": "Description 2",
+                                "value": "",
+                                "propertyHtmlTag": "textarea",
+                                "propertyHtmlTagType": "",
+                                "htmlAttributes": [{
+                                    "propertyName": "placeholder",
+                                    "propertyValue": "Here should be a value for description 2"
+                                }]
+                            }
+                        ],
+                        "type": 2,
+                        "renderAsHtmlTag": "p",
+                        "renderedHtmlTagType": ""
+                    }
+                ],
+                "descriptionFiles": [],
+                "tools": [],
+                "spareParts": [],
+                "id": "2"
+            }
+        ]
+    }
+
+]

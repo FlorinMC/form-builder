@@ -1,0 +1,15 @@
+<div fxFlex="80%">
+    <div fxLayout="row" fxFlexFill>
+        <div class="Workplans" *ngIf="workplansList && workplansList.length" fxFlexFill>
+            <div class="Workplans Workplans-List">
+                <div class="Workplan" fxlayout="row" fxLayoutAlign="center center">
+                    <div fxFlex="80%">
+                        <md-list>
+                            <app-workplan *ngFor="let workplan of workplansList; let last = last" [ngClass]="{ last: last }" [workplan]="workplan"></app-workplan>
+                        </md-list>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

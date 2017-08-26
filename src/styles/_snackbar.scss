@@ -1,0 +1,16 @@
+.Snackbar {
+    &-CenterHorizontallyTop {
+        @include position(absolute, $top: $toolbar-height);
+        margin: 0 auto;
+        background: #DBEBBE !important;
+        max-width: 60% !important;
+    }
+    .mat-simple-snackbar {
+        color: #000;
+        &>span {
+            font-size: 17px;
+            width: 100%;
+            text-align: center;
+        }
+    }
+}

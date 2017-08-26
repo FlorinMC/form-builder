@@ -1,0 +1,6 @@
+<md-input-container class="block">
+    <input mdInput placeholder="Name" type="text" value="{{workplanTitle}}" (click)="onInputClicked($event)" (input)="onInputChanged($event)" class="noBorder noMargin">
+</md-input-container>
+<md-input-container class="textarea block">
+    <textarea mdInput mdTextareaAutosize placeholder="Description" value={{workplanDescription}} (click)="onTextareaClicked($event)" (input)="onTextareaChanged($event)" class="noMargin"></textarea>
+</md-input-container>

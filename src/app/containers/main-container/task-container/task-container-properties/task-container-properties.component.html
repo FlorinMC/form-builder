@@ -1,0 +1,66 @@
+<div class="Task-Container">
+    <md-input-container class="block">
+        <input mdInput placeholder="Name" type="text" value="{{task?.name}}" (input)="onInputChanged($event)" class="noBorder noMargin">
+    </md-input-container>
+    <md-input-container class="textarea block">
+        <textarea mdInput mdTextareaAutosize placeholder="Description" value="{{task?.description}}" (input)="onTextareaChanged($event)" class="noMargin"></textarea>
+    </md-input-container>
+    <md-input-container class="block">
+        <input mdInput placeholder="Expected duration" type="text" value="4 h" class="noBorder noMargin">
+    </md-input-container>
+
+    <button (click)="saveIt()">save it for test</button>
+    <div class="flex-container">
+        <div class="flex-item" fxFlex="100%">
+
+            <table class="Task-Container Task-Container-Box">
+                <tr>
+                    <th>Instruction files</th>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="Task-Container Task-Container-File">User manual.pdf</div>
+                    </td>
+                    <td>
+                        <div class="Task-Container Task-Container-File">50kb</div>
+                    </td>
+                    <td class="Task-Container Task-Container-Icon">
+                        <md-icon md-list-icon>delete</md-icon>
+                    </td>
+                </tr>
+                <tr>
+                    <td><a class="Task-Container Task-Container-Add">+ Attach new file</a></td>
+                </tr>
+            </table>
+
+            <table class="Task-Container Task-Container-Box">
+                <tr>
+                    <th>Tools</th>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="Task-Container Task-Container-File">(no items)</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td><a class="Task-Container Task-Container-Add">+ Add tool</a></td>
+                </tr>
+            </table>
+
+            <table class="Task-Container Task-Container-Box">
+                <tr>
+                    <th>Spare parts</th>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="Task-Container Task-Container-File">(no items)</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td><a class="Task-Container Task-Container-Add">+ Add spare part</a></td>
+                </tr>
+            </table>
+
+        </div>
+    </div>
+</div>

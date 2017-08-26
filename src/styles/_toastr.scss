@@ -1,0 +1,51 @@
+#toast-container {
+  &.toast-top-center {
+    top: $toolbar-height;
+
+    .toast {
+      max-width: 60%;
+      width: inherit !important;
+      padding: 15px !important;
+
+      &.toast-error,
+      &.toast-success {
+        background-image: none !important;
+      }
+
+      &.toast-success {
+        background-color: #DBEBBE;
+
+        .toast-message {
+          font-size: 17px;
+          color: #000;
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  &.toast-bottom-center {
+    bottom: 0;
+
+    .toast {
+      max-width: 60%;
+      width: inherit !important;
+      padding: 15px !important;
+
+      &.toast-error,
+      &.toast-success {
+        background-image: none !important;
+      }
+
+      &.toast-success {
+        background-color: #DBEBBE;
+
+        .toast-message {
+          font-size: 17px;
+          color: #000;
+          text-align: center;
+        }
+      }
+    }
+  }
+}

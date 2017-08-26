@@ -1,0 +1,16 @@
+:host {
+    min-height: 100%;
+}
+
+$test: calc(100% - $footer-height);
+.Properties {
+    min-height: 100%;
+    &-Title {
+        font-size: 14px;
+        color: rgba(0, 0, 0, 0.87);
+    }
+    md-card {
+        min-height: calc($test - $toolbar-height);
+        padding: 15px 15px;
+    }
+}

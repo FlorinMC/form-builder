@@ -1,0 +1,50 @@
+<md-list-item class="border" [ngClass]="{ 'expanded': isWorkPlanExpanded }">
+    <div fxLayout="column" fxFlex="100%">
+        <div fxFlex="100%" [ngClass]="{ 'Workplan-MainRow-Expanded': isWorkPlanExpanded }" class="Workplan Workplan-MainRow">
+            <div fxlayout="row" fxFlex="100%" fxLayoutAlign="center center">
+                <div fxFlex="80%">
+                    <p class="Workplan Workplan-Name">{{workplan?.name}}</p>
+                </div>
+                <div fxFlex="15%">
+                    <p class="Workplan Workplan-Author">Author id is {{workplan?.userId}}</p>
+                </div>
+                <div fxFlex="5%" class="align-right">
+                    <!-- <p>{{workplan?.updatedOn | date: 'dd.MM.yyyy HH:mm'}}</p> -->
+                    <p class="Workplan Workplan-Time" *ngIf="!isWorkPlanExpanded">{{workplan?.updatedOn | date: 'HH:mm'}}</p>
+                    <md-icon mdTooltip="Delete" tooltip-position="before" class="Workplan Workplan-Icon" *ngIf="isWorkPlanExpanded">delete</md-icon>
+                </div>
+            </div>
+        </div>
+        <div fxlayout="row" *ngIf="isWorkPlanExpanded">
+            <div fxFlex="100%" class="Workplan Workplan-Description">
+                <div class="Workplan Workplan-Description-Title">
+                    {{workplan?.description}}
+                </div>
+                <div class="Workplan Workplan-Description-Tasks" *ngIf="workplanTasks && workplanTasks.length">
+                    <div class="Workplan Workplan-Description  Workplan-Description-Tasks Workplan-Description-Tasks-Title">
+                        Tasks
+                    </div>
+                    <div class="Workplan Workplan-Description-Tasks-List">
+                        <md-list>
+                            <md-list-item *ngFor="let workplanTask of workplanTasks">
+                                <div fxLayout="row" fxFlex="100%">
+                                    <div fxFlex="40%">
+                                        <div class="Workplan Workplan-Description-Tasks Workplan-Description-Tasks-List Workplan-Description-Tasks-List-Title">{{workplanTask?.name}}</div>
+                                        <div class="Workplan Workplan-Description-Tasks Workplan-Description-Tasks-List Workplan-Description-Tasks-List-Subtitle">{{workplanTask?.duration}} hours</div>
+                                    </div>
+                                    <div fxFlex="60%">
+                                        <p class="Workplan Workplan-Description Workplan-Description-Tasks Workplan-Description-Tasks-List Workplan-Description-Tasks-List-Content">{{workplanTask?.description}}</p>
+                                    </div>
+                                </div>
+
+                            </md-list-item>
+                        </md-list>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="Workplan Workplan-Button" *ngIf="isWorkPlanExpanded" fxLayout="row" fxLayoutAlign="end center" fxFlex="100%">
+            <button (click)="onWorkplanButtonClick(workplan)" md-button>Edit work plan</button>
+        </div>
+    </div>
+</md-list-item>
